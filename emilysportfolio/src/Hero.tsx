@@ -10,19 +10,22 @@ function Hero() {
 
     return(
         <>
-                <section id="home" className="flex flex-col justify-center min-h-screen  sm:px-6 md:px-24 overflow-x-hidden">
-                        <div className="w-full max-w-5xl mx-auto">
-                            <h1 className="text-2xl sm:text-4xl md:text-6xl md:text-center font-bold mb-4 text-primary text-center md:text-left break-words">
+                <section id="home" className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 sm:px-6 md:px-24 overflow-x-hidden gap-8 md:gap-12">
+                        <div className="w-full max-w-2xl flex-1">
+                            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 text-primary text-center md:text-left break-words leading-tight whitespace-normal">
                                 Nice to meet you, I'm Emily!
                             </h1>
-                            <p className="text-secondary text-center md:text-left whitespace-normal">
+                            <p className="text-secondary text-center md:text-left whitespace-normal mb-6">
                                 Web Development, Data Engineering, and Computer Networks Enthusiast
                             </p>
-                            <div className="mt-6 flex justify-center md:justify-start">
+                            <div className="flex justify-center md:justify-start">
                                 <button onClick={downloadCV} aria-label="Download CV" className="button text-input inline-flex items-center justify-center px-4 py-2">
                                     My CV
                                 </button>
                             </div>
+                        </div>
+                        <div className="w-full max-w-sm md:max-w-md flex-1 flex justify-center">
+                            <img src="/./img/Emily-1.png" alt="Emily Francesca Gouw" className="h-auto max-h-100 md:max-h-full w-auto" />
                         </div>
                 </section>
         </>
