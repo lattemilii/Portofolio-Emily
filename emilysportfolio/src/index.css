@@ -94,8 +94,9 @@ button:focus-visible {
   }
 }
 
-html {
+html,body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @theme inline {
